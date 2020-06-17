@@ -1,0 +1,157 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Helvetica;
+  margin: 0;
+  background-color: rgb(224, 240, 245);
+}
+
+h2,h3{
+  color: darkblue;
+}
+
+p{
+  line-height: 1.5em;
+  color: #010101;
+}
+
+header{
+  position: fixed;
+  margin: 0;
+  width: 100vw;
+  height: 4em;
+  background-color: rgb(154, 204, 206);
+  color: darkblue;
+  z-index: 3;
+}
+
+.logo{
+  margin: 0;
+  padding: 0.7em;
+  width: auto;
+  text-transform: uppercase;
+}
+
+nav{
+  position: relative;
+  display: block;
+  float: right;
+  top: -2.2em;
+  padding: 0 1em;
+}
+
+nav a{
+  text-decoration: none;
+  color: darkblue;
+  padding: 0.5em;
+}
+
+#home{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-landing{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.imagebox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.imagebox h3{
+  margin: auto;
+  top: 50%;
+  left: 25%;
+  color: white;
+  text-transform: uppercase;
+  z-index: 1;
+  position: absolute;
+  font-size: 2em;
+}
+
+.main-image{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.img2 , .img3{
+  transform: translateX(-100vw);
+}
+
+#introduction{
+  margin: 0;
+  padding: 0 1em;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 244);
+}
+
+.intro-image{
+  width: 50%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.intro-image img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-content{
+  margin: 0 1em;
+  width: 50vw;
+  padding-left: 2em;
+}
+
+.intro-content p{
+  width: 80%;
+}
+
+#types{
+  padding: 1em;
+}
+
+#types h2{
+  padding-left: 1.5em;
+}
+
+/* #types h3{
+  padding-left: 2em;
+} */
+
+.type{
+  display: grid;
+  padding: 2em;
+  padding-bottom: 5em;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  height: 400px;
+}
+
+.type-image{
+  width: 70%;
+  height: 100%;
+}
+
+footer{
+  padding: 0.5em 2em;
+  background-color: rgb(154, 204, 206);
+}
+
+
